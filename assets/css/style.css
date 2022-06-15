@@ -310,8 +310,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  position: relative; }
   .dsl-ice-cream.dsl-ice-cream-with-primary-bg {
     background-color: #ff0000; }
   .dsl-ice-cream span {
@@ -320,13 +321,16 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #fff; }
+    background-color: #fff;
+    position: relative; }
   .dsl-ice-cream .dsl-cone {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 32px 24px 0 24px;
-    border-color: #fff transparent transparent transparent; }
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: 0; }
 
 .dsl-grid-section {
   background-color: rgba(129, 129, 129, 0.3); }
