@@ -1,0 +1,46 @@
+
+  
+  @include keyframes (bounce) {
+    0% {
+        @include transform(translateY(-115px));
+        @include animation-timing( ease-in );
+        background-color: $color_primary;
+    }
+    20%{
+        background-color: rgba($color_gray,0.5);
+    }
+    
+    40% {
+        @include transform(translateY(-90px));
+        @include animation-timing( ease-in );
+        background-color: rgba($color_gray,0.5);
+    }
+    65% {
+        @include transform(translateY(-50px));
+        @include animation-timing( ease-in );
+        background-color: rgba($color_gray,0.5);
+    }
+    82% {
+        @include transform(translateY(-25px));
+        @include animation-timing( ease-in );
+        background-color: rgba($color_gray,0.5);
+    }
+    93% {
+        @include transform(translateY(-15px));
+        @include animation-timing( ease-in );
+        background-color: rgba($color_gray,0.5);
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        @include transform(translateY(0px));
+        @include animation-timing( ease-out );
+        background-color: rgba($color_gray,0.5);
+    }
+    100% {
+        @include transform(translateY(0px));
+        @include animation-timing( ease-out );
+        background-color: $color_primary;
+    }
+  }

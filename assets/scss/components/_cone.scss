@@ -1,0 +1,31 @@
+.#{$prefix}-ice-cream{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    &.#{$prefix}-ice-cream-with-primary-bg{
+        background-color: $color_primary;
+    }
+    span{
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        @include transform(translateX(-50%));
+    }
+    .#{$prefix}-cream{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #fff;
+        bottom: 38px;
+    }
+    .#{$prefix}-cone{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 30px 0 30px;
+        border-color: #fff transparent transparent transparent;
+        bottom: 0;
+        
+    }
+}

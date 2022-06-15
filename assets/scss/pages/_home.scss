@@ -1,0 +1,129 @@
+
+  
+.#{$prefix}-rect-with-circle-section{
+    background-color: rgba($color_gray,0.5);
+    .#{$prefix}-circle-wrapper{
+        background-color: $color_white;
+        width: 500px;
+        height: 300px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.#{$prefix}-list-section{
+    font-weight: 500;
+    ul{
+        @extend %reset-ul;
+        li{
+            padding: 15px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            @include media(lg){
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &:nth-child(odd){
+                background-color:$color_primary;
+                color: $primary_bg_text_color;
+            }
+            &:nth-child(4n+0){
+                background-color: $color_secondary;
+                color: $secondary_bg_text_color;
+            }
+            span{
+                display: inline-block;
+            }
+            .#{$prefix}-counter{
+                display: inline-block;
+                padding-right: 30px;
+                color: $text_color;
+                flex: 0 0 50px;
+                max-width: 50px;
+            }
+            .#{$prefix}-caption{
+                flex:  0 0 calc(100% - 50px);
+                max-width: calc(100% - 50px);
+            }
+        }
+    }
+}
+.#{$prefix}-circle-with-animation{
+    @include border-bottom(2px,solid);
+    border-color: rgba($color_black,0.3);
+    position: relative;
+    height: 200px;
+    text-align: center;
+    .#{$prefix}-circle{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: $color_primary;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+	    @include animation(bounce 3s steps(1, start) infinite forwards);
+    }
+}
+.#{$prefix}-box-with-animation{
+    .#{$prefix}-button-section{
+        text-align: center;
+        padding-bottom: 30px;
+        button{
+            span{
+               display: inline-block;
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+       
+    }
+    .#{$prefix}-animation-effect{
+        .#{$prefix}-button-section{
+            button{
+                background-color: $color_primary;
+                color: $primary_bg_text_color;
+                span{
+                    &:nth-child(1){
+                        display: none;
+                    }
+                    &:nth-child(2){
+                        display: inline-block;
+                    }
+                }
+            }
+           
+        }
+        .#{$prefix}-wrapper{
+            .#{$prefix}-box{
+                @include animation(diagonal 3s linear infinite);
+            }
+        }
+    }
+    .#{$prefix}-wrapper{
+        width: 800px;
+        height: 350px;
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        @include border();
+        border-color: $color_primary;
+        @include media(lg){
+            height: 600px;
+        }
+        .#{$prefix}-box{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            background-color: $color_secondary;
+            left: calc(50% - 30px);
+            bottom: 0;
+        }
+    }
+}

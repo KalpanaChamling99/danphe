@@ -1,0 +1,26 @@
+@include keyframes(diagonal){
+	0%{
+        left: calc(50% - 60px);
+        bottom: 0;
+    }
+    25%{
+        left: calc(100% - 60px);
+        bottom: calc(50% - 30px);
+        background-color: rgba($color_gray,0.5);
+    }
+    50%{
+        left: calc(50% - 60px);
+        bottom: calc(100% - 60px);
+        background-color: rgba($color_gray,0.5);
+    }
+    75%{
+        left: 0;
+        bottom: calc(50% - 30px);
+        background-color: rgba($color_gray,0.5);
+    }
+    100%{
+        left: calc(50% - 60px);
+        bottom: 0;
+        background-color: $color_secondary;
+    }
+}

@@ -1,0 +1,10 @@
+.#{$prefix}-section-padding{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.#{$prefix}-items-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
