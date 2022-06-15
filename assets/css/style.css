@@ -307,29 +307,26 @@ button {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  position: relative; }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
   .dsl-ice-cream.dsl-ice-cream-with-primary-bg {
     background-color: #ff0000; }
   .dsl-ice-cream span {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%); }
+    display: inline-block; }
   .dsl-ice-cream .dsl-cream {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #fff;
-    bottom: 38px; }
+    background-color: #fff; }
   .dsl-ice-cream .dsl-cone {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 40px 30px 0 30px;
-    border-color: #fff transparent transparent transparent;
-    bottom: 0; }
+    border-color: #fff transparent transparent transparent; }
 
 .dsl-grid-section {
   background-color: rgba(129, 129, 129, 0.3); }
