@@ -101,7 +101,7 @@
         }
         .#{$prefix}-wrapper{
             .#{$prefix}-box{
-                @include animation(diagonal 3s linear infinite);
+                @include animation(diagonal 3s ease-in-out infinite);
             }
         }
     }

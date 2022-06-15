@@ -479,10 +479,10 @@ button {
   .dsl-box-with-animation .dsl-animation-effect .dsl-button-section button span:nth-child(2) {
     display: inline-block; }
 .dsl-box-with-animation .dsl-animation-effect .dsl-wrapper .dsl-box {
-  -webkit-animation: diagonal 3s linear infinite;
-  -o-animation: diagonal 3s linear infinite;
-  -moz-animation: diagonal 3s linear infinite;
-  animation: diagonal 3s linear infinite; }
+  -webkit-animation: diagonal 3s ease-in-out infinite;
+  -o-animation: diagonal 3s ease-in-out infinite;
+  -moz-animation: diagonal 3s ease-in-out infinite;
+  animation: diagonal 3s ease-in-out infinite; }
 .dsl-box-with-animation .dsl-wrapper {
   width: 800px;
   height: 350px;
