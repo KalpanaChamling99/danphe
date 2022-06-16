@@ -2,9 +2,6 @@
     background-color: rgba($color_gray,0.3);
    .dsl-row-wrapper{
        justify-content: center;
-    //    @include media(xs){
-    //        padding-left: 15px;
-    //    }
    }
     .#{$prefix}-box-wrapper{
         padding-top: 15px;
@@ -31,7 +28,7 @@
             }
             &:nth-child(even){
                 padding-left: 15px;
-                border-color: transparent;
+                border-right-color: transparent;
             }
 
         }
@@ -42,7 +39,7 @@
             @include border-right(2px,solid);
             border-color: #999;
             &:nth-child(even){
-                border-color: #999;
+                border-right-color: #999;
             }
             &:nth-child(3){
                 padding-top: 0;

@@ -359,7 +359,7 @@ button {
           border-color: #999; }
         .dsl-grid-section .dsl-box-wrapper:nth-child(even) {
           padding-left: 15px;
-          border-color: transparent; } }
+          border-right-color: transparent; } }
     @media (min-width: 1050px) {
       .dsl-grid-section .dsl-box-wrapper {
         padding-left: 15px;
@@ -368,7 +368,7 @@ button {
         border-right-width: 2px;
         border-color: #999; }
         .dsl-grid-section .dsl-box-wrapper:nth-child(even) {
-          border-color: #999; }
+          border-right-color: #999; }
         .dsl-grid-section .dsl-box-wrapper:nth-child(3) {
           padding-top: 0;
           border-top: 0; }
