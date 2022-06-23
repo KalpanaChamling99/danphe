@@ -15,14 +15,16 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+       
         <!-- RECTANGLE WITH CIRCLE -->
+
         <div class="dsl-rect-with-circle-section dsl-section-padding">
             <div class="dsl-container-fluid">
                 
                 <div class="dsl-circle-wrapper dsl-items-center">
                     <div class="dsl-ice-cream dsl-ice-cream-with-primary-bg">
                         <span class="dsl-cream"></span>
-                        <span class="dsl-cone"></span>
+                        <span class="dsl-cone dsl-cone-bottom"></span>
                     </div>
                 </div>
 
@@ -168,15 +170,16 @@
             <div class="dsl-container-fluid">
 
                 <div class="dsl-button-section">
-                    <button class="dsl-btn dsl-btn-with-secondary-bg dsl-animation-btn" id="square-anim-btn" onClick="animation()"><span>Start</span><span>Stop</span> Animation</button>
+                    <button class="dsl-btn dsl-btn-with-secondary-bg dsl-animation-btn" id="square-anim-btn" onClick="animation()"><span>JS Toggle Animation</button>
                 </div>
-
                 <div class="dsl-wrapper">
-                    <span class="dsl-box"></span>
+                    <span class="dsl-box" data-animation style="animation-play-state: paused;"></span>
                 </div>
                 
             </div> <!--.dsl-container-fluid-->
         </div><!--.dsl-box-with-animation-->
+
+
         
         <script src="assets/js/main.js"></script>
     </body>

@@ -1,4 +1,8 @@
 function animation() {
-  var btnParent = document.getElementById("square-anim-btn").parentNode.parentNode;
-  btnParent.classList.toggle("dsl-animation-effect");
+  const animations = document.querySelectorAll('[data-animation');
+  animations.forEach(animation => {
+    const running = animation.style.animationPlayState || 'running';
+    animation.style.animationPlayState = running === 'running' ? 'paused' : 'running';
+  })
 }
+ 

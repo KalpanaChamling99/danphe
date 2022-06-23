@@ -8,6 +8,19 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    &:before{
+        content: '';
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 32px 24px 0 24px;
+        border-color: #fff transparent transparent transparent;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        @include transform(translateX(-50%) rotate(180deg));
+    }
     &.#{$prefix}-ice-cream-with-primary-bg{
         background-color: $color_primary;
     }
@@ -28,6 +41,12 @@
         border-width: 32px 24px 0 24px;
         border-color: #fff transparent transparent transparent;
         position: absolute;
+    }
+    .dsl-cone-top{
+        top: 0;
+        @include transform(rotate(180deg));
+    }
+    .dsl-cone-bottom{
         bottom: 0;
     }
 }

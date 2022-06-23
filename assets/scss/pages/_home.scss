@@ -83,28 +83,6 @@
         }
        
     }
-    .#{$prefix}-animation-effect{
-        .#{$prefix}-button-section{
-            button{
-                background-color: $color_primary;
-                color: $primary_bg_text_color;
-                span{
-                    &:nth-child(1){
-                        display: none;
-                    }
-                    &:nth-child(2){
-                        display: inline-block;
-                    }
-                }
-            }
-           
-        }
-        .#{$prefix}-wrapper{
-            .#{$prefix}-box{
-                @include animation(diagonal 3s ease-in-out infinite);
-            }
-        }
-    }
     .#{$prefix}-wrapper{
         width: 800px;
         height: 350px;
@@ -124,6 +102,8 @@
             background-color: $color_secondary;
             left: calc(50% - 30px);
             bottom: 0;
+            @include animation(diagonal 3s ease-in-out infinite);
+            animation-play-state: paused;
         }
     }
 }

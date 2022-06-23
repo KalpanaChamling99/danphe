@@ -1,6 +1,6 @@
 @include keyframes(diagonal){
 	0%{
-        left: calc(50% - 60px);
+        left: calc(50% - 30px);
         bottom: 0;
     }
     25%{
@@ -19,7 +19,7 @@
         background-color: rgba($color_gray,0.5);
     }
     100%{
-        left: calc(50% - 60px);
+        left: calc(50% - 30px);
         bottom: 0;
         background-color: $color_secondary;
     }
