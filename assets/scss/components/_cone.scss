@@ -14,12 +14,14 @@
         height: 0;
         width: 0;
         border-style: solid;
-        border-width: 32px 24px 0 24px;
-        border-color: #fff transparent transparent transparent;
+        border-style: solid;
+        border-width: 0 24px 32px 24px;
+        border-color: transparent transparent #fff transparent;
         position: absolute;
         left: 50%;
         top: 0;
-        @include transform(translateX(-50%) rotate(180deg));
+        @include transform(translateX(-50%));
+        
     }
     &.#{$prefix}-ice-cream-with-primary-bg{
         background-color: $color_primary;

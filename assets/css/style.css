@@ -320,14 +320,15 @@ button {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 32px 24px 0 24px;
-    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    border-width: 0 24px 32px 24px;
+    border-color: transparent transparent #fff transparent;
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translateX(-50%) rotate(180deg);
-    -webkit-transform: translateX(-50%) rotate(180deg);
-    -moz-transform: translateX(-50%) rotate(180deg); }
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%); }
   .dsl-ice-cream.dsl-ice-cream-with-primary-bg {
     background-color: #ff0000; }
   .dsl-ice-cream span {

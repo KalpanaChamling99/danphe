@@ -1,12 +1,10 @@
-function animation() {
-  const animations = document.querySelectorAll('[data-animation');
-  animations.forEach(animation => {
-    const animationStatus = animation.style.animationPlayState;
-    if( animationStatus === 'running'){
-      animation.style.animationPlayState = 'paused';
-    }else{
-      animation.style.animationPlayState = 'running';
-    }
-  });
+function boxAnimation() {
+  const boxIdSelector = document.getElementById("box-animate");
+  const animationStatus = boxIdSelector.style.animationPlayState;
+  if( animationStatus === 'running'){
+    boxIdSelector.style.animationPlayState = 'paused';
+  }else{
+    boxIdSelector.style.animationPlayState = 'running';
+  }
 }
  
